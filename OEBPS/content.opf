@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" xml:lang="pt-BR" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 21.3" />
+		<meta name="cover" content="x1.png" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title>Manual GuaIa_V2</dc:title>
+		<dc:date>2026-05-27T22:41:41Z</dc:date>
+		<dc:language>pt-BR</dc:language>
+		<meta property="dcterms:modified">2026-05-27T22:41:41Z</meta>
+		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
+		<!--accessibility options-->
+	</metadata>
+	<manifest>
+		<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml" />
+		<item id="Manual_GuaIa_V2" href="Manual_GuaIa_V2.xhtml" media-type="application/xhtml+xml" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="manual-reader.css" href="css/manual-reader.css" media-type="text/css" />
+		<item id="Calibri-Light.ttf" href="font/Calibri-Light.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-Bold.ttf" href="font/Lato-Bold.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-BoldItalic.ttf" href="font/Lato-BoldItalic.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-Heavy.ttf" href="font/Lato-Heavy.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="Lato-Italic.ttf" href="font/Lato-Italic.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-Light.ttf" href="font/Lato-Light.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-Medium.ttf" href="font/Lato-Medium.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="Lato-Regular.ttf" href="font/Lato-Regular.ttf" media-type="application/x-font-ttf" />
+		<item id="Lato-Semibold.ttf" href="font/Lato-Semibold.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="Roboto-Light.ttf" href="font/Roboto-Light.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="RobotoMono-Bold.ttf" href="font/RobotoMono-Bold.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="RobotoMono-Light.ttf" href="font/RobotoMono-Light.ttf" media-type="application/vnd.ms-opentype" />
+		<item id="x1.png" href="image/1.png" media-type="image/png" properties="cover-image" />
+		<item id="ChatGPT_Image_22_de_mai._de_2026-_15_11_29.png" href="image/ChatGPT_Image_22_de_mai._de_2026%2C_15_11_29.png" media-type="image/png" />
+		<item id="Image6759.png" href="image/Image6759.png" media-type="image/png" />
+		<item id="Image6767.jpg" href="image/Image6767.jpg" media-type="image/jpeg" />
+		<item id="Image6774.jpg" href="image/Image6774.jpg" media-type="image/jpeg" />
+		<item id="Image6782.png" href="image/Image6782.png" media-type="image/png" />
+		<item id="Image6798.png" href="image/Image6798.png" media-type="image/png" />
+		<item id="Image6806.png" href="image/Image6806.png" media-type="image/png" />
+		<item id="Image6831.png" href="image/Image6831.png" media-type="image/png" />
+		<item id="Image6838.png" href="image/Image6838.png" media-type="image/png" />
+		<item id="Image6845.png" href="image/Image6845.png" media-type="image/png" />
+		<item id="Image6853.png" href="image/Image6853.png" media-type="image/png" />
+		<item id="Image6860.png" href="image/Image6860.png" media-type="image/png" />
+		<item id="Image6868.png" href="image/Image6868.png" media-type="image/png" />
+		<item id="Image6875.png" href="image/Image6875.png" media-type="image/png" />
+		<item id="Image6883.png" href="image/Image6883.png" media-type="image/png" />
+		<item id="Image6892.png" href="image/Image6892.png" media-type="image/png" />
+		<item id="Image6903.png" href="image/Image6903.png" media-type="image/png" />
+		<item id="Image6918.png" href="image/Image6918.png" media-type="image/png" />
+		<item id="Image6925.png" href="image/Image6925.png" media-type="image/png" />
+		<item id="Image6933.png" href="image/Image6933.png" media-type="image/png" />
+		<item id="Image6940.png" href="image/Image6940.png" media-type="image/png" />
+		<item id="Image6948.png" href="image/Image6948.png" media-type="image/png" />
+		<item id="Image6955.png" href="image/Image6955.png" media-type="image/png" />
+		<item id="Image6963.png" href="image/Image6963.png" media-type="image/png" />
+		<item id="Image6970.png" href="image/Image6970.png" media-type="image/png" />
+		<item id="Image6978.png" href="image/Image6978.png" media-type="image/png" />
+		<item id="Image6987.png" href="image/Image6987.png" media-type="image/png" />
+		<item id="Image6998.png" href="image/Image6998.png" media-type="image/png" />
+		<item id="Image7011.png" href="image/Image7011.png" media-type="image/png" />
+		<item id="Image7018.png" href="image/Image7018.png" media-type="image/png" />
+		<item id="Image7026.png" href="image/Image7026.png" media-type="image/png" />
+		<item id="Image7033.png" href="image/Image7033.png" media-type="image/png" />
+		<item id="Image7041.png" href="image/Image7041.png" media-type="image/png" />
+		<item id="Image7048.png" href="image/Image7048.png" media-type="image/png" />
+		<item id="Image7056.png" href="image/Image7056.png" media-type="image/png" />
+		<item id="Image7063.png" href="image/Image7063.png" media-type="image/png" />
+		<item id="Image7071.png" href="image/Image7071.png" media-type="image/png" />
+		<item id="Image7081.png" href="image/Image7081.png" media-type="image/png" />
+		<item id="Image7092.png" href="image/Image7092.png" media-type="image/png" />
+		<item id="Image7105.png" href="image/Image7105.png" media-type="image/png" />
+		<item id="Image7112.png" href="image/Image7112.png" media-type="image/png" />
+		<item id="Image7120.png" href="image/Image7120.png" media-type="image/png" />
+		<item id="Image7127.png" href="image/Image7127.png" media-type="image/png" />
+		<item id="Image7135.png" href="image/Image7135.png" media-type="image/png" />
+		<item id="Image7142.png" href="image/Image7142.png" media-type="image/png" />
+		<item id="Image7150.png" href="image/Image7150.png" media-type="image/png" />
+		<item id="Image7157.png" href="image/Image7157.png" media-type="image/png" />
+		<item id="Image7165.jpg" href="image/Image7165.jpg" media-type="image/jpeg" />
+		<item id="Image7174.jpg" href="image/Image7174.jpg" media-type="image/jpeg" />
+		<item id="Image7185.png" href="image/Image7185.png" media-type="image/png" />
+		<item id="Image7199.jpg" href="image/Image7199.jpg" media-type="image/jpeg" />
+		<item id="Image7206.png" href="image/Image7206.png" media-type="image/png" />
+		<item id="Image7214.png" href="image/Image7214.png" media-type="image/png" />
+		<item id="Image7221.png" href="image/Image7221.png" media-type="image/png" />
+		<item id="Image7229.png" href="image/Image7229.png" media-type="image/png" />
+		<item id="Image7236.png" href="image/Image7236.png" media-type="image/png" />
+		<item id="Image7244.png" href="image/Image7244.png" media-type="image/png" />
+		<item id="Image7259.png" href="image/Image7259.png" media-type="image/png" />
+		<item id="Image7268.png" href="image/Image7268.png" media-type="image/png" />
+		<item id="Image7282.png" href="image/Image7282.png" media-type="image/png" />
+		<item id="Image7296.png" href="image/Image7296.png" media-type="image/png" />
+		<item id="Image7303.png" href="image/Image7303.png" media-type="image/png" />
+		<item id="Image7311.png" href="image/Image7311.png" media-type="image/png" />
+		<item id="Image7318.png" href="image/Image7318.png" media-type="image/png" />
+		<item id="Image7327.png" href="image/Image7327.png" media-type="image/png" />
+		<item id="Image7334.png" href="image/Image7334.png" media-type="image/png" />
+		<item id="Image7342.png" href="image/Image7342.png" media-type="image/png" />
+		<item id="Image7349.png" href="image/Image7349.png" media-type="image/png" />
+		<item id="Image7357.png" href="image/Image7357.png" media-type="image/png" />
+		<item id="Image7366.png" href="image/Image7366.png" media-type="image/png" />
+		<item id="Image7377.png" href="image/Image7377.png" media-type="image/png" />
+		<item id="Image7390.png" href="image/Image7390.png" media-type="image/png" />
+		<item id="Image7397.png" href="image/Image7397.png" media-type="image/png" />
+		<item id="Image7405.jpg" href="image/Image7405.jpg" media-type="image/jpeg" />
+		<item id="Image7412.jpg" href="image/Image7412.jpg" media-type="image/jpeg" />
+		<item id="Image7420.png" href="image/Image7420.png" media-type="image/png" />
+		<item id="Image7427.png" href="image/Image7427.png" media-type="image/png" />
+		<item id="Image7435.png" href="image/Image7435.png" media-type="image/png" />
+		<item id="Image7442.png" href="image/Image7442.png" media-type="image/png" />
+		<item id="Image7450.jpg" href="image/Image7450.jpg" media-type="image/jpeg" />
+		<item id="Image7459.png" href="image/Image7459.png" media-type="image/png" />
+		<item id="Image7470.png" href="image/Image7470.png" media-type="image/png" />
+		<item id="Image7483.jpg" href="image/Image7483.jpg" media-type="image/jpeg" />
+		<item id="Image7490.jpg" href="image/Image7490.jpg" media-type="image/jpeg" />
+		<item id="Image7498.jpg" href="image/Image7498.jpg" media-type="image/jpeg" />
+		<item id="Image7505.png" href="image/Image7505.png" media-type="image/png" />
+		<item id="Image7513.jpg" href="image/Image7513.jpg" media-type="image/jpeg" />
+		<item id="Image7520.jpg" href="image/Image7520.jpg" media-type="image/jpeg" />
+		<item id="Image7528.jpg" href="image/Image7528.jpg" media-type="image/jpeg" />
+		<item id="Image7543.png" href="image/Image7543.png" media-type="image/png" />
+		<item id="Image7552.png" href="image/Image7552.png" media-type="image/png" />
+		<item id="Image7577.png" href="image/Image7577.png" media-type="image/png" />
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover" linear="no" />
+		<itemref idref="Manual_GuaIa_V2" />
+	</spine>
+	<guide>
+		<reference type="cover" href="cover.xhtml" title="Cover" />
+	</guide>
+</package>

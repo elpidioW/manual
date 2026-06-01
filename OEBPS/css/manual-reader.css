@@ -1,0 +1,459 @@
+/* Leitura web — manual GuaIA v1.8 (correção de tela em branco) */
+
+:root {
+	--guaia-navy: #2f3559;
+	--guaia-navy-dark: #121735;
+	--guaia-text: #1f1f1f;
+	--guaia-muted: #5c6378;
+	--guaia-page: #ffffff;
+	--guaia-max: 920px;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body.guaia-manual {
+	background: #eceef3;
+	color: var(--guaia-text);
+	font-family: "Lato Light", Lato, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0;
+}
+
+/* Anula layout fixo InDesign que esvazia / empurra o conteúdo */
+body.guaia-manual [id^="_idContainer"] {
+	height: auto !important;
+	left: auto !important;
+	max-height: none !important;
+	min-height: 0 !important;
+	overflow: visible !important;
+	position: static !important;
+	right: auto !important;
+	top: auto !important;
+	width: auto !important;
+	z-index: auto !important;
+}
+
+body.guaia-manual #_idContainer000,
+body.guaia-manual #_idContainer111,
+body.guaia-manual #_idContainer227,
+body.guaia-manual #_idContainer350,
+body.guaia-manual #_idContainer351,
+body.guaia-manual #_idContainer369,
+body.guaia-manual #_idContainer370 {
+	display: none !important;
+	height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body.guaia-manual #_idContainer106,
+body.guaia-manual #_idContainer220 {
+	display: none !important;
+}
+
+body.guaia-manual div._idGenObjectStyleOverride-3:empty {
+	display: none !important;
+}
+
+body.guaia-manual .Quadro-de-gr-fico-b-sico:empty {
+	display: none !important;
+}
+
+body.guaia-manual [role="doc-pagebreak"] {
+	border: 0;
+	height: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	visibility: hidden;
+}
+
+/* Texto branco do InDesign só onde há fundo escuro */
+body.guaia-manual p,
+body.guaia-manual li,
+body.guaia-manual span {
+	color: var(--guaia-text);
+}
+
+body.guaia-manual p.Heading-0 {
+	color: #ffffff;
+}
+
+body.guaia-manual #_idContainer107,
+body.guaia-manual #_idContainer107 p,
+body.guaia-manual #_idContainer107 span {
+	color: #ffffff !important;
+}
+
+body.guaia-manual .manual-chapter-index-grid p,
+body.guaia-manual .manual-chapter-index-grid span {
+	color: #ffffff !important;
+}
+
+body.guaia-manual .manual-chapter-index > div > p.Heading-0 span,
+body.guaia-manual .manual-chapter-index .CharOverride-16 {
+	color: var(--guaia-navy) !important;
+}
+
+body.guaia-manual p.Heading-2,
+body.guaia-manual p.Heading-3 {
+	line-height: 1.35 !important;
+}
+
+/* Capa */
+body.guaia-manual #_idContainer107 {
+	background: var(--guaia-navy);
+	box-sizing: border-box;
+	display: block !important;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 4rem 1.5rem 2rem;
+	text-align: center;
+}
+
+body.guaia-manual #_idContainer107 p._0_base_lato_12 {
+	font-size: 1.125rem;
+	line-height: 1.45;
+	margin: 0.35em 0;
+	text-indent: 0;
+}
+
+/* --- Cards de navegação (capa, sumário, índices) --- */
+
+/* Remove faixa azul / borda dos frames vazios do InDesign */
+body.guaia-manual .manual-toc-main .Quadro-de-gr-fico-b-sico,
+body.guaia-manual .manual-chapter-index-grid .Quadro-de-gr-fico-b-sico,
+body.guaia-manual #_idContainer110 .Quadro-de-gr-fico-b-sico {
+	border: none !important;
+	display: none !important;
+	height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 0 !important;
+}
+
+body.guaia-manual .manual-toc-main a,
+body.guaia-manual .manual-chapter-index-grid a {
+	border-radius: 8px;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+body.guaia-manual .manual-toc-main a:focus-visible,
+body.guaia-manual .manual-chapter-index-grid a:focus-visible,
+body.guaia-manual a[href="#introducao"]:focus-visible {
+	border-radius: 8px;
+	outline: 3px solid var(--guaia-navy);
+	outline-offset: 3px;
+}
+
+body.guaia-manual .manual-toc-main ._idGenWritingDirection-1,
+body.guaia-manual .manual-chapter-index-grid ._idGenWritingDirection-1,
+body.guaia-manual #_idContainer110 {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex !important;
+	flex-direction: column;
+	gap: 0.35rem;
+	justify-content: center;
+	min-height: 3.5rem;
+	text-align: center;
+	width: 100%;
+}
+
+body.guaia-manual .manual-toc-main .Quadro-de-texto-b-sico,
+body.guaia-manual .manual-chapter-index-grid .Quadro-de-texto-b-sico,
+body.guaia-manual #_idContainer110 .Quadro-de-texto-b-sico {
+	border: none !important;
+	width: 100%;
+}
+
+body.guaia-manual .manual-toc-main p,
+body.guaia-manual .manual-chapter-index-grid p,
+body.guaia-manual #_idContainer110 p {
+	margin: 0 !important;
+	text-align: center;
+	text-indent: 0 !important;
+}
+
+body.guaia-manual .manual-toc-main p.Heading-1,
+body.guaia-manual .manual-chapter-index-grid p.Heading-1 {
+	line-height: 1.2 !important;
+}
+
+body.guaia-manual .manual-toc-main .ParaOverride-5,
+body.guaia-manual .manual-toc-main .ParaOverride-6,
+body.guaia-manual .manual-chapter-index-grid .ParaOverride-5,
+body.guaia-manual .manual-chapter-index-grid .ParaOverride-6,
+body.guaia-manual .manual-chapter-index-grid .ParaOverride-7 {
+	margin: 0 !important;
+}
+
+/* Capa — botão Manual do Usuário */
+body.guaia-manual #_idContainer107 + ._idGenObjectLayout-1 {
+	margin: 0 auto 2.5rem;
+	max-width: var(--guaia-max);
+	text-align: center;
+}
+
+body.guaia-manual #_idContainer107 + ._idGenObjectLayout-1 > a[href="#introducao"] {
+	display: inline-block;
+	max-width: 100%;
+}
+
+body.guaia-manual #_idContainer110 {
+	background: #ffffff;
+	border: 1px solid #e2e6ef;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(18, 23, 53, 0.1);
+	display: inline-flex !important;
+	margin: 0;
+	padding: 0.9rem 2.25rem;
+}
+
+body.guaia-manual a[href="#introducao"]:hover #_idContainer110 {
+	box-shadow: 0 6px 18px rgba(18, 23, 53, 0.14);
+}
+
+body.guaia-manual ._idGenObjectLayout-1:has(> #_idContainer220) {
+	display: none !important;
+}
+
+body.guaia-manual #_idContainer109 .CharOverride-2,
+body.guaia-manual #_idContainer110 .CharOverride-2 {
+	color: var(--guaia-navy) !important;
+	font-family: Lato, sans-serif !important;
+	font-size: 1.15rem !important;
+	font-weight: 700 !important;
+}
+
+/* Sumário principal */
+body.guaia-manual .manual-toc-main {
+	display: flex !important;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	justify-content: center;
+	margin: 2rem auto;
+	max-width: var(--guaia-max);
+	padding: 0 1rem 2rem;
+}
+
+body.guaia-manual .manual-toc-main a {
+	color: inherit;
+	flex: 1 1 220px;
+	max-width: 280px;
+}
+
+body.guaia-manual .manual-toc-main a:hover {
+	box-shadow: 0 6px 18px rgba(18, 23, 53, 0.12);
+	transform: translateY(-2px);
+}
+
+body.guaia-manual .manual-toc-main ._idGenObjectLayout-1 {
+	display: block !important;
+	flex: 1 1 220px;
+	max-width: 280px;
+}
+
+body.guaia-manual .manual-toc-main ._idGenWritingDirection-1 {
+	background: #ffffff;
+	border: 1px solid #e2e6ef;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(18, 23, 53, 0.08);
+	padding: 1rem 1.25rem;
+}
+
+body.guaia-manual .manual-toc-main .CharOverride-3 {
+	color: var(--guaia-navy) !important;
+	font-family: Lato, sans-serif !important;
+	font-size: 1rem !important;
+	font-weight: 600 !important;
+}
+
+/* Conteúdo principal */
+body.guaia-manual .manual-content {
+	background: var(--guaia-page);
+	box-shadow: 0 4px 24px rgba(18, 23, 53, 0.1);
+	display: block !important;
+	margin: 0 auto 3rem;
+	max-width: var(--guaia-max);
+	padding: 2rem 2.5rem 3rem;
+}
+
+body.guaia-manual .manual-content p._0_base_lato_12 {
+	font-size: 1rem;
+	line-height: 1.55;
+	text-indent: 0;
+}
+
+body.guaia-manual .manual-content .CharOverride-4 {
+	color: var(--guaia-text) !important;
+}
+
+body.guaia-manual .manual-content p.Heading-0 {
+	background: var(--guaia-navy);
+	border-radius: 4px;
+	color: #ffffff !important;
+	font-size: 1.75rem;
+	line-height: 1.25;
+	margin: 2.5rem 0 1.25rem;
+	padding: 0.65rem 1rem;
+}
+
+body.guaia-manual .manual-content p.Heading-0:first-child {
+	margin-top: 0;
+}
+
+body.guaia-manual .manual-content p.Heading-2 {
+	color: var(--guaia-navy) !important;
+	font-size: 1.35rem;
+	margin: 2rem 0 0.75rem;
+}
+
+body.guaia-manual .manual-content p.Heading-3 {
+	color: var(--guaia-navy-dark) !important;
+	font-size: 1.15rem;
+	margin: 1.75rem 0 0.65rem;
+}
+
+body.guaia-manual .manual-content ul {
+	margin: 0.5rem 0 1.25rem;
+	padding-left: 1.5rem;
+}
+
+body.guaia-manual .manual-content li._2_topico {
+	font-size: 1rem;
+	margin-bottom: 0.5em;
+}
+
+body.guaia-manual .manual-content a[href^="http"] {
+	color: var(--guaia-navy) !important;
+	font-weight: 600;
+}
+
+body.guaia-manual .manual-content .CharOverride-7 {
+	color: var(--guaia-navy) !important;
+}
+
+body.guaia-manual .manual-figure {
+	display: block !important;
+	margin: 1.5rem 0 2rem;
+	text-align: center;
+}
+
+body.guaia-manual .manual-figure img {
+	height: auto;
+	max-width: 100%;
+}
+
+body.guaia-manual .manual-figure p._1_legenda,
+body.guaia-manual .manual-figure .CharOverride-15 {
+	color: var(--guaia-muted) !important;
+	font-size: 0.875rem;
+	text-align: center;
+	text-indent: 0;
+}
+
+/* Índices de capítulo */
+body.guaia-manual .manual-chapter-index {
+	display: block !important;
+	margin: 2.5rem 0;
+}
+
+body.guaia-manual .manual-chapter-index > div > p.Heading-0 {
+	background: transparent;
+	color: var(--guaia-navy) !important;
+	font-size: 1.5rem;
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+body.guaia-manual .manual-chapter-index-grid {
+	display: grid !important;
+	gap: 0.75rem;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	margin: 0;
+	padding: 0;
+}
+
+body.guaia-manual .manual-chapter-index-grid ._idGenObjectLayout-1 {
+	display: block !important;
+}
+
+body.guaia-manual .manual-chapter-index-grid a:hover {
+	box-shadow: 0 6px 20px rgba(18, 23, 53, 0.25);
+	transform: translateY(-2px);
+}
+
+body.guaia-manual .manual-chapter-index-grid a:hover ._idGenWritingDirection-1 {
+	box-shadow: none;
+}
+
+body.guaia-manual .manual-chapter-index-grid ._idGenWritingDirection-1 {
+	background: var(--guaia-navy);
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(18, 23, 53, 0.15);
+	min-height: 5.5rem;
+	padding: 1rem 1.1rem;
+}
+
+body.guaia-manual .manual-chapter-index-grid .CharOverride-17,
+body.guaia-manual .manual-chapter-index-grid .CharOverride-19 {
+	color: #ffffff !important;
+	display: block;
+	font-family: "Lato Heavy", Lato, sans-serif !important;
+	font-size: 1.5rem !important;
+	font-weight: 800 !important;
+	line-height: 1.15 !important;
+}
+
+body.guaia-manual .manual-chapter-index-grid .CharOverride-18,
+body.guaia-manual .manual-chapter-index-grid .CharOverride-20 {
+	color: rgba(255, 255, 255, 0.92) !important;
+	display: block;
+	font-family: Lato, sans-serif !important;
+	font-size: 0.85rem !important;
+	font-weight: 500 !important;
+	line-height: 1.35 !important;
+	margin-top: 0.15rem;
+}
+
+body.guaia-manual .manual-content img {
+	display: block;
+	height: auto;
+	margin: 1rem auto;
+	max-width: 100%;
+}
+
+body.guaia-manual .manual-content p.ParaOverride-3 {
+	text-align: center;
+	text-indent: 0;
+}
+
+@media (max-width: 640px) {
+	body.guaia-manual .manual-content {
+		padding: 1.25rem 1rem 2rem;
+	}
+
+	body.guaia-manual #_idContainer107 {
+		padding: 2.5rem 1rem 2rem;
+	}
+}
+
+@media print {
+	body.guaia-manual {
+		background: #fff;
+	}
+
+	body.guaia-manual .manual-content {
+		box-shadow: none;
+		max-width: none;
+	}
+}
