@@ -23,6 +23,30 @@ body.guaia-manual {
 	padding: 0;
 }
 
+/* Header / logo */
+.site-header {
+	text-align: center;
+	/* aumentar padding-top para descer a logo */
+	padding: 2.25rem 0.75rem 0.5rem;
+	background: var(--guaia-navy);
+	color: #fff;
+}
+
+#site-logo {
+	max-height: 140px; /* aumentado */
+	width: auto;
+	display: block;
+	margin: 0 auto;
+	/* pequena margem inferior para separar da capa */
+	margin-bottom: 0.5rem;
+}
+
+/* Aproximar e reduzir tamanho das linhas de texto da capa */
+body.guaia-manual #_idContainer107 p._0_base_lato_12 {
+	margin: 0.08em 0;
+	line-height: 1.05;
+}
+
 /* Anula layout fixo InDesign que esvazia / empurra o conteúdo */
 body.guaia-manual [id^="_idContainer"] {
 	height: auto !important;
@@ -116,9 +140,9 @@ body.guaia-manual #_idContainer107 {
 }
 
 body.guaia-manual #_idContainer107 p._0_base_lato_12 {
-	font-size: 1.125rem;
-	line-height: 1.45;
-	margin: 0.35em 0;
+	font-size: 0.85rem; /* tamanho reduzido */
+	line-height: 1.05; /* linhas mais próximas */
+	margin: 0.08em 0; /* espaço reduzido entre linhas */
 	text-indent: 0;
 }
 
