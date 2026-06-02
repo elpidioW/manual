@@ -11,18 +11,81 @@
 			body.guaia-manual { background: #eceef3; color: #1f1f1f; min-height: 100vh; }
 			body.guaia-manual #_idContainer107 { background: #2f3559; padding: 3rem 1rem; text-align: center; }
 			body.guaia-manual #_idContainer107, body.guaia-manual #_idContainer107 * { color: #fff !important; }
+			/* Aumenta fonte do bloco de destaque */
+			body.guaia-manual #_idContainer107 p { font-size: 1.15rem; line-height: 1.45; }
 			body.guaia-manual .manual-content { background: #fff; max-width: 920px; margin: 0 auto 2rem; padding: 2rem; }
+			body.guaia-manual .back-button { display: inline-block; margin-right: 0.75rem; margin-bottom: 0.5rem; padding: 0.65rem 1rem; background: #ffffff; color: #2f3559; border-radius: 0.35rem; text-decoration: none; font-weight: 700; border: 1px solid rgba(47, 53, 89, 0.2); }
+			body.guaia-manual .back-button:hover, body.guaia-manual .back-button:focus { background: #f4f6fb; color: #1b2144; }
+			body.guaia-manual .site-header { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; padding: 1rem; flex-wrap: wrap; }
 		</style>
 	</head>
 	<body id="Manual_GuaIa_V2" class="guaia-manual">
 		<header class="site-header">
+			<a href="https://dwiki.daurora.inf.ufg.br/pt-br/guaia" class="back-button" title="Voltar ao site">Voltar ao site</a>
 			<img id="site-logo" src="image/logo_guaia.png" alt="GuaIA logo" />
 		</header>
+
+		<!-- Sticky navigation (aparece quando o usuário atinge a posição original dos botões) -->
+		<nav id="sticky-nav" class="sticky-nav" aria-hidden="true">
+			<div class="nav-buttons">
+				<a href="https://dwiki.daurora.inf.ufg.br/pt-br/guaia" class="back-button" title="Voltar ao site">Voltar ao site</a>
+				<a href="#introducao">Introdução</a>
+				<a href="#_idTextAnchor000">Funcionalidades Gerais do Sistema</a>
+				<a href="#_idTextAnchor049">Gestão de Usuário</a>
+			</div>
+		</nav>
 		<div id="page1" role="doc-pagebreak" aria-label="1" epub:type="pagebreak"></div>
 		<div class="_idGenObjectLayout-1">
 			<div id="_idContainer000" class="Quadro-de-gr-fico-b-sico _idGenObjectStyleOverride-1">
 			</div>
 		</div>
+
+		<script>
+		// Mostrar/ocultar o sticky header quando os botões originais saem do viewport
+		(function(){
+			function initSticky(){
+				var nav = document.getElementById('sticky-nav');
+				var trigger = document.getElementById('_idContainer110');
+				if(!nav || !trigger) return;
+				if('IntersectionObserver' in window){
+					var io = new IntersectionObserver(function(entries){
+						entries.forEach(function(entry){
+							if(entry.isIntersecting){
+								nav.classList.remove('visible');
+								nav.setAttribute('aria-hidden','true');
+							} else {
+								nav.classList.add('visible');
+								nav.setAttribute('aria-hidden','false');
+							}
+						});
+					}, { root: null, threshold: 0 });
+					io.observe(trigger);
+				} else {
+					var threshold = trigger.getBoundingClientRect().top + window.pageYOffset;
+					function onScroll(){
+						if(window.pageYOffset >= threshold){
+							nav.classList.add('visible');
+							nav.setAttribute('aria-hidden','false');
+						} else {
+							nav.classList.remove('visible');
+							nav.setAttribute('aria-hidden','true');
+						}
+					}
+					window.addEventListener('scroll', onScroll, {passive:true});
+					window.addEventListener('resize', function(){
+						threshold = trigger.getBoundingClientRect().top + window.pageYOffset;
+						onScroll();
+					});
+					setTimeout(onScroll,100);
+				}
+			}
+			if(document.readyState !== 'loading'){
+				initSticky();
+			} else {
+				document.addEventListener('DOMContentLoaded', initSticky);
+			}
+		})();
+		</script>
 		<div class="_idGenObjectLayout-1">
 			<div id="_idContainer106" class="_idGenWritingDirection-1">
 				<div id="_idContainer002" class="_idGenObjectStyleOverride-2">
@@ -238,7 +301,6 @@
 			</div>
 		</div>
 		<div id="_idContainer107" class="Quadro-de-texto-b-sico">
-			<p class="_0_base_lato_12 ParaOverride-1"><span class="CharOverride-1">GuaIA v1.8</span></p>
 			<p class="_0_base_lato_12 ParaOverride-1"><span class="CharOverride-1">Coleta, Detecção e Disponibilização</span></p>
 			<p class="_0_base_lato_12 ParaOverride-1"><span class="CharOverride-1">de Postagens com Potencial de Desinformação</span></p>
 			<p class="_0_base_lato_12 ParaOverride-1"><span class="CharOverride-1">Versão do Documento: 1.8</span></p>
